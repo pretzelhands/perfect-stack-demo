@@ -1,0 +1,21 @@
+{
+  "name": "perfect-stack-demo",
+  "scripts": {
+    "start": "imba -w src/server.imba",
+    "build": "imba build src/server.imba",
+    "css": "npx tailwindcss -i ./src/tailwind/tailwind.css -o ./src/index.css -w",
+    "watch": "concurrently \"npm:css\" \"npm:start\""
+  },
+  "dependencies": {
+    "@inertiajs/inertia": "^0.10.1",
+    "@types/express-session": "^1.17.4",
+    "dotenv": "^10.0.0",
+    "edgedb": "^0.15.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "imba": "^2.0.0-alpha.165"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
